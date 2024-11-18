@@ -24,6 +24,9 @@ suspend fun main() = coroutineScope {
         downloadData(weatherList)
         downloadData(randoms)
         println("Данные загружены")
+        println(persons)
+        println(weatherList)
+        println(randoms)
     }.join()
     println("Программа завершена")
 }
